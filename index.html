@@ -108,6 +108,10 @@ section{
     overflow:hidden;
 }
 
+.hidden-content{
+    display:none;
+}
+
 .hero::before{
     content:"";
     position:absolute;
@@ -726,12 +730,17 @@ linear-gradient(
     linear-gradient(
         90deg,
         #2a0707 0%,
-        #3b1010 25%,
-        #fff8ec 25%,
-        #fff8ec 75%,
-        #3b1010 75%,
+        #3b1010 20%,
+        #fff8ec 20%,
+        #fff8ec 80%,
+        #3b1010 80%,
         #2a0707 100%
     );
+}
+
+body.lock-scroll{
+    overflow:hidden;
+    height:100vh;
 }
 </style>
 </head>
@@ -771,6 +780,8 @@ linear-gradient(
 </section>
 
 <!-- INVOCATION -->
+
+<div id="mainContent" class="hidden-content">
 
 <section class="invocation">
 
@@ -856,7 +867,7 @@ of Ankuli / Berahampur
 <div class="family-card">
 <h3 class="gold">The Bride</h3>
 <p style="margin-top:15px;">
-<strong>Gayatri</strong> — younger daughter of
+<strong>Gayatri</strong> — elder daughter of
 <br><br>
 Smt. Ramadevi Pattnaik & Sri. Akshaya Kumar Pattnaik
 <br><br>
@@ -1431,35 +1442,32 @@ Made with love • Tap the seal, share the joy
 
 /* Envelope Animation */
 
+document.body.classList.add("lock-scroll");
+
 function openEnvelope(){
 
-document.getElementById("bgMusic").play();
+    document.getElementById("bgMusic").play();
 
-const hero = document.getElementById("hero");
+    document.body.classList.remove("lock-scroll");
 
-document.getElementById("envelope")
-    .classList.add("open");
+    document.getElementById("envelope")
+        .classList.add("open");
 
-document.getElementById("inviteContent")
-    .classList.add("show");
+    document.getElementById("inviteContent")
+        .classList.add("show");
 
-setTimeout(()=>{
+    setTimeout(()=>{
 
-    hero.classList.add("fade-out");
+        document.getElementById("hero").style.display = "none";
 
-},1000);
+        document.getElementById("mainContent").style.display = "block";
 
-setTimeout(()=>{
-
-    hero.style.display="none";
-
-    document.querySelector(".invocation")
-        .scrollIntoView({
+        window.scrollTo({
+            top:0,
             behavior:"smooth"
         });
 
-},2000);
-
+    },1500);
 }
 
 /* Countdown */
@@ -1645,6 +1653,6 @@ slider.addEventListener('touchend',(e)=>{
 });
 
 </script>
-
+</div>
 </body>
 </html>
