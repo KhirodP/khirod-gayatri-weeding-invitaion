@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khirod & Gayatri | Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --gold:#d4af37;
+    --dark-red:#7b1113;
+    --cream:#fff8ec;
+    --text:#3d2c2e;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.save-date-title{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    color:#5f7c5f;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.save-date-small{
+    text-align:center;
+    letter-spacing:4px;
+    color:#c8a45d;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+.subtitle{
+    max-width:700px;
+    margin:0 auto 50px auto;
+    text-align:center;
+    color:#777;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.gold{
+    color:var(--gold);
+}
+
+.names{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    color:var(--gold);
+    text-shadow:1px 1px 10px rgba(0,0,0,.1);
+}
+
+.section-divider{
+    width:120px;
+    height:3px;
+    background:var(--gold);
+    margin:20px auto;
+}
+
+/* HERO */
+
+/* .hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+} */
+
+.hero{
+    min-height:100vh;
+    background:#b11b1f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background-image:
+        radial-gradient(circle, rgba(212,175,55,.35) 1.5px, transparent 1.5px);
+
+    background-size:40px 40px;
+    opacity:.6;
+}
+
+.hero.fade-out{
+    opacity:0;
+    transition:1s;
+}
+
+.envelope-container{
+    cursor:pointer;
+}
+
+.envelope{
+    width:240px;
+    height:165px;
+    background:#b71c1c;
+    position:relative;
+    margin:0 auto 30px;
+    border-radius:6px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.envelope::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:130px solid transparent;
+    border-right:130px solid transparent;
+    border-top:90px solid #d4b870;
+    transform-origin:top;
+    transform-origin:top;
+    transition:1s;
+}
+
+.envelope.open::before{
+    transform:rotateX(180deg);
+}
+
+.envelope::after{
+    content:"ॐ";
+
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:62px;
+    height:62px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #f5d57d,
+        #c79b2b
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+    color:#6b3d00;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.invite-content{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.invite-content.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.hero h1{
+    font-size:1.3rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.tap-text{
+    margin-top:20px;
+    color:#fff;
+    font-weight:500;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:.5;}
+    50%{opacity:1;}
+    100%{opacity:.5;}
+}
+
+/* Invocation */
+
+.invocation{
+    max-width:650px;
+    margin:0 auto;
+    background:#fbf7ee;
+    padding:70px 60px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,.05);
+}
+
+.om{
+    font-size:4rem;
+    color:#c8a45d;
+}
+
+.invocation h2{
+    display:none;
+}
+
+.sanskrit{
+    color:#8b1d1d;
+    font-size:2rem;
+    line-height:1.6;
+    font-family:'Playfair Display',serif;
+}
+
+.translation{
+    max-width:350px;
+    margin:25px auto;
+    color:#7d5b5b;
+    font-style:italic;
+    font-size:1.2rem;
+}
+
+.names{
+    font-family:'Great Vibes',cursive;
+    font-size:6.5rem;
+    color:#8b1d1d;
+    line-height:0.9;
+}
+
+.sanskrit{
+    font-size:1.2rem;
+    line-height:2;
+    color:var(--dark-red);
+    margin:20px auto;
+    max-width:900px;
+}
+
+.translation{
+    max-width:850px;
+    margin:auto;
+    color:#666;
+    font-style:italic;
+}
+
+.couple-box{
+    margin-top:40px;
+}
+
+.family-text{
+    max-width:700px;
+    margin:40px auto 0;
+    text-align:center;
+    color:#6b4f3f;
+    font-size:1.15rem;
+    line-height:1.9;
+    font-family:'Playfair Display', serif;
+}
+
+.family-text strong{
+    color:#8b1d1d;
+}
+
+/* Scratch Cards */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.scratch-card{
+    position:relative;
+    width:105px;
+    height:145px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    border:2px solid #d9b45b;
+}
+
+.reveal{
+    position:absolute;
+    inset:0;
+    background:#fff;
+    color:#8b1d1d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    font-weight:700;
+}
+
+canvas{
+    position:absolute;
+    inset:0;
+    z-index:5;
+}
+
+/* Countdown */
+
+.countdown{
+/*background:#fff8ec;*/
+color:#333;
+border-radius:15px;
+min-width:90px;
+/*padding:15px;*/
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+/* .family-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+} */
+
+.countdown{
+    text-align:center;
+}
+
+.save-date-title{
+    margin-bottom:15px;
+}
+
+.cards{
+    margin-top:40px;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+background:white;
+border:2px solid #d9b45b;
+border-radius:15px;
+min-width:90px;
+padding:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.time-box span{
+display:block;
+font-size:3rem;
+font-weight:700;
+color:#8b1d1d;
+}
+
+/* Timeline */
+.program-card{
+    max-width:420px;
+    margin:40px auto;
+    background:#fffaf2;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.program-header{
+    color:white;
+    padding:25px;
+    position:relative;
+}
+
+.program-header h3{
+    font-family:'Great Vibes',cursive;
+    font-size:3rem;
+    line-height:1;
+    margin:0;
+}
+
+.program-header p{
+    margin-top:12px;
+    font-style:italic;
+}
+
+.program-small{
+    font-size:11px;
+    letter-spacing:3px;
+    margin-bottom:8px;
+}
+
+.program-icon{
+    position:absolute;
+    right:25px;
+    bottom:15px;
+    font-size:4rem;
+    opacity:.9;
+}
+
+.program-body{
+    padding:25px;
+}
+
+.program-row{
+    display:flex;
+    gap:15px;
+    padding:15px 0;
+    border-bottom:1px dashed #d9c39c;
+}
+
+.program-time{
+    color:#8b0000;
+    font-weight:700;
+    min-width:90px;
+}
+
+.program-map{
+    width:100%;
+    height:220px;
+    margin-top:20px;
+    border-radius:12px;
+    border:2px solid #d9c39c;
+}
+
+.program-footer{
+    margin-top:20px;
+    text-align:center;
+    color:#b99752;
+    letter-spacing:3px;
+    font-size:12px;
+}
+
+.map-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#6f8a64;
+    color:white;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+/* Gallery */
+
+.story-slider{
+    width:100%;
+    max-width:700px;
+    height:560px;
+    margin:40px auto;
+    position:relative;
+}
+
+.slide{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:280px;
+    height:380px;
+    transform-origin:center;
+    transition:all .6s ease;
+    border-radius:20px;
+    border:2px solid #d4af37;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+    overflow:visible;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slider-nav{
+    text-align:center;
+    margin-top:20px;
+}
+
+.slider-nav button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#d4af37;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    margin:0 8px;
+}
+.slide-caption{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:395px;
+    width:500px;
+    text-align:center;
+    z-index:999;
+}
+
+.caption-small{
+    color:#c8a45d;
+    letter-spacing:5px;
+    font-size:14px;
+    text-transform:uppercase;
+}
+
+.caption-title{
+    font-family:'Playfair Display',serif;
+    font-size:2rem;
+    color:#2d2d2d;
+    font-style:italic;
+    margin-top:10px;
+}
+
+/* vows-section */
+
+.vows-section{
+    max-width:700px;
+    margin:80px auto;
+    padding:40px;
+    background:rgba(255,248,236,.8);
+}
+
+.vows-intro{
+    text-align:center;
+    max-width:500px;
+    margin:20px auto 50px;
+    color:#666;
+    line-height:1.8;
+}
+
+.vows-list{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.vow-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.vow-number{
+    width:38px;
+    height:38px;
+    min-width:38px;
+    border:2px solid #d4af37;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#8b1d1d;
+    font-weight:600;
+    background:white;
+}
+
+.vow-item h4{
+    margin:0 0 5px;
+    color:#c8a45d;
+    letter-spacing:2px;
+    font-size:13px;
+}
+
+.vow-item p{
+    margin:0;
+    line-height:1.7;
+}
+
+/* Footer */
+
+/* footer{
+    text-align:center;
+    padding:40px;
+    background:#f3ead7;
+}
+
+footer .names{
+    font-size:3rem;
+}
+
+@media(max-width:768px){
+
+.names{
+    font-size:3.5rem;
+}
+
+h2{
+    font-size:2.3rem;
+}
+
+.family{
+    grid-template-columns:1fr;
+}
+
+.time-box{
+    min-width:120px;
+}
+} */
+
+.footer-section{
+    background:#687b5c;
+    color:white;
+    text-align:center;
+    padding:80px 30px;
+}
+
+.footer-photo img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #d4af37;
+}
+
+.footer-title{
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+    margin:20px 0;
+}
+
+.footer-quote{
+    max-width:600px;
+    margin:20px auto;
+    font-style:italic;
+    color:#f3e8c2;
+}
+
+.contact-grid{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.contact-card{
+    border:2px solid rgba(255,255,255,.25);
+    border-radius:15px;
+    padding:20px;
+    width:250px;
+    background:rgba(255,255,255,.05);
+}
+
+.contact-card h4{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#d4af37;
+}
+
+.contact-card p{
+    margin:10px 0;
+}
+
+.contact-card a{
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.footer-hashtag{
+    font-family:'Great Vibes',cursive;
+    font-size:2.5rem;
+    color:#d4af37;
+    margin-top:30px;
+}
+
+.footer-bottom{
+    margin-top:20px;
+    color:#ddd;
+    font-size:14px;
+}
+
+
+/* body{
+background:
+linear-gradient(
+90deg,
+#3a1d1d 0%,
+#3a1d1d 25%,
+#fff8ec 25%,
+#fff8ec 75%,
+#3a1d1d 75%,
+#3a1d1d 100%
+);
+} */
+ /* body{
+    font-family:'Poppins',sans-serif;
+    background:#fff8ec;
+    color:var(--text);
+    overflow-x:hidden;
+} */
+ body{
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+    overflow-x:hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2a0707 0%,
+        #3b1010 25%,
+        #fff8ec 25%,
+        #fff8ec 75%,
+        #3b1010 75%,
+        #2a0707 100%
+    );
+}
+</style>
+</head>
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HERO -->
+
+<section class="hero" id="hero">
+
+<div class="envelope-container" onclick="openEnvelope()">
+
+<div id="envelope" class="envelope"></div>
+
+<div id="inviteContent" class="invite-content">
+    <h1>You are cordially invited</h1>
+
+    <div class="names">
+        Khirod & Gayatri
+    </div>
+
+    <p style="margin-top:20px;font-size:1.1rem;">
+        To celebrate love, laughter & happily ever after.
+    </p>
+</div>
+
+<p class="tap-text">
+    ✨ Tap to Reveal ✨
+</p>
+
+</div>
+
+</section>
+
+<!-- INVOCATION -->
+
+<section class="invocation">
+
+<div class="om">ॐ</div>
+
+<!-- <h2>Om Shree Ganeshaya Namah</h2> -->
+ <div class="save-date-small">
+OM SHREE GANESHAYA NAMAH
+</div>
+
+<!-- <div class="section-divider"></div> -->
+ <div style="
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+margin:30px 0;">
+<hr style="width:80px;border:0;border-top:1px solid #d4af37;">
+✦
+<hr style="width:80px;border:0;border-top:1px solid #d4af37;">
+</div>
+
+<p class="sanskrit">
+    वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>
+    निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥
+</p>
+
+<p class="translation">
+    O Lord Ganesha, with the curved trunk and mighty form,
+    whose brilliance equals millions of suns, kindly remove all
+    obstacles from our endeavors always.
+</p>
+
+<div class="couple-box">
+
+<p style="margin-top:40px;">
+Together with their families, request the honour of your presence at the wedding of
+</p>
+
+<div class="names" style="margin-top:20px;">
+Khirod 
+</div>
+
+<div class="names" style="margin-top:20px;">
+ &
+</div>
+
+<div class="names" style="margin-top:20px;">
+Gayatri
+</div>
+
+<div class="family-text">
+
+<p>
+<strong>Khirod</strong> — elder son of
+Smt. Bharati Pattnaik & Sri. Kiran Kumar Pattnaik,
+of Ankuli, Berhampur
+</p>
+
+<p style="margin-top:25px;">
+<strong>Gayatri</strong> — younger daughter of
+Smt. Ramadevi Pattnaik & Sri. Akshaya Kumar Pattnaik,
+of Ankorada, Hinjilicut
+</p>
+
+</div>
+
+</div>
+
+<!-- <div class="family">
+
+<div class="family-card">
+<h3 class="gold">The Groom</h3>
+<p style="margin-top:15px;">
+<strong>Khirod</strong> — elder son of
+<br><br>
+Smt. Bharati Pattnaik & Sri. Kiran Kumar Pattnaik
+<br><br>
+of Ankuli / Berahampur
+</p>
+</div>
+
+<div class="family-card">
+<h3 class="gold">The Bride</h3>
+<p style="margin-top:15px;">
+<strong>Gayatri</strong> — younger daughter of
+<br><br>
+Smt. Ramadevi Pattnaik & Sri. Akshaya Kumar Pattnaik
+<br><br>
+of Ankorada / Hinjilikatu
+</p>
+</div> -->
+
+</div>
+
+</section>
+
+<!-- SAVE DATE -->
+
+<section>
+
+<div class="save-date-small">
+MARK YOUR CALENDARS
+</div>
+
+<div class="save-date-title">
+Save the Date
+</div>
+
+<p class="subtitle">
+Scratch the three cards below to reveal the day we say forever.
+</p>
+
+<div class="cards">
+
+<div class="scratch-card">
+<div class="reveal">July</div>
+<canvas class="scratch"></canvas>
+</div>
+
+<div class="scratch-card">
+<div class="reveal">12</div>
+<canvas class="scratch"></canvas>
+</div>
+
+<div class="scratch-card">
+<div class="reveal">2026</div>
+<canvas class="scratch"></canvas>
+</div>
+
+</div>
+
+<p style="
+text-align:center;
+margin-top:40px;
+letter-spacing:3px;
+color:#c8a45d;
+font-size:12px;">
+✦ SWIPE ACROSS EACH CARD ✦
+</p>
+
+</section>
+<!-- COUNTDOWN -->
+
+<section class="countdown">
+
+<div class="save-date-small">
+THE WAIT BEGINS
+</div>
+
+<div class="save-date-title">
+Counting Down
+</div>
+
+<p class="subtitle" style="color:#777;">
+    The wait begins...
+</p>
+
+<div class="timer">
+
+<div class="time-box">
+<span id="days">0</span>
+Days
+</div>
+
+<div class="time-box">
+<span id="hours">0</span>
+Hours
+</div>
+
+<div class="time-box">
+<span id="mins">0</span>
+Mins
+</div>
+
+<div class="time-box">
+<span id="secs">0</span>
+Secs
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section>
+
+<div class="save-date-small">
+A LITTLE LOVE STORY
+</div>
+
+<div class="save-date-title">
+Our Story
+</div>
+
+<div class="story-slider">
+
+
+
+<div class="slide active">
+    <img src="images/FIL05577.JPG">
+
+    <div class="slide-caption">
+        <div class="caption-small">THE FIRST GLANCE</div>
+        <div class="caption-title">
+            Where our story began.
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <img src="images/FIL05582.JPG">
+
+    <div class="slide-caption">
+        <div class="caption-small">A SPECIAL MOMENT</div>
+        <div class="caption-title">
+            Every smile tells a story.
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <img src="images/FIL05615.JPG">
+
+    <div class="slide-caption">
+        <div class="caption-small">THE PROPOSAL</div>
+        <div class="caption-title">
+            One question — one beautiful yes.
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <img src="images/FIL05651.JPG">
+
+    <div class="slide-caption">
+        <div class="caption-small">TWO HEARTS, ONE PATH</div>
+        <div class="caption-title">
+            Walking into a brand new beginning.
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <img src="images/FIL05736.JPG">
+
+    <div class="slide-caption">
+        <div class="caption-small">FOREVER STARTS HERE</div>
+        <div class="caption-title">
+            Together is our favorite place.
+        </div>
+    </div>
+</div>
+
+</div>
+
+<p class="subtitle">
+Tap through our journey — or simply watch it unfold.
+</p>
+
+<div class="slider-nav">
+<button onclick="prevSlide()">❮</button>
+<button onclick="nextSlide()">❯</button>
+</div>
+
+</section>
+
+
+<!-- TIMELINE -->
+
+<section>
+
+<div class="save-date-small">
+Join the celebrations
+</div>
+
+<div class="save-date-title">
+Wedding Programme
+</div>
+
+<p class="subtitle">
+The blessings begin — auspicious rituals, the sacred vows at noon, and a joyful feast. We’d be honoured to have you.
+</p>
+
+<div class="event-container">
+
+<!-- HALDI -->
+<div class="program-card">
+
+<div class="program-header" style="background:#d99616">
+
+<div class="program-small">WEDDING CELEBRATION</div>
+
+<h3>Haldi</h3>
+
+<p>The joyful beginning</p>
+
+<div class="program-icon">🌼</div>
+
+</div>
+
+<div class="program-body">
+
+<div class="program-row">
+    <span class="program-time">06:00 PM</span>
+    <span>Haldi Ceremony Begins</span>
+</div>
+
+<div class="program-row">
+    <span class="program-time">Location</span>
+    <span>At Our Residence</span>
+</div>
+
+<a href="#" class="map-btn">📍 VIEW ON MAP</a>
+
+
+<!-- <img src="images/haldi-map.jpg" class="program-map"> -->
+
+<div class="program-footer">
+11 JUL 2026
+</div>
+
+</div>
+
+</div>
+
+<!-- BARATI & BATABARANA -->
+<div class="program-card">
+
+<div class="program-header" style="background:#d99616">
+
+<div class="program-small">THE WEDDING DAY</div>
+
+<h3>Barati &<br>Batabarana</h3>
+
+<p>The groom's procession & welcome</p>
+
+<div class="program-icon">✿</div>
+
+</div>
+
+<div class="program-body">
+
+<div class="program-row">
+<span class="program-time">12:30 PM</span>
+<span>Barati Procession</span>
+</div>
+
+<div class="program-row">
+<span class="program-time">02:00 PM</span>
+<span>Batabarana Ceremony</span>
+</div>
+
+<a href="https://maps.app.goo.gl/ULnHcTamfevjbHRh9" class="map-btn">📍 VIEW ON MAP (Direction)</a>
+
+<!-- <img src="images/lunch-map.jpg" class="program-map"> -->
+<iframe
+class="program-map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.23192231451696!2d84.7453377390877!3d19.48203432084503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d4d3093a18ac1%3A0xe4e3ac8bcfb283f1!2sBiju%20Pattnaik%20Kalyan%20Mandap.%20Patana%20sahi.%20Main%20road!5e0!3m2!1sen!2sin!4v1782294290200!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+height="220"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+<div class="program-footer">
+12 JUL 2026
+</div>
+
+</div>
+
+</div>
+
+<!-- MARRIAGE -->
+<div class="program-card">
+
+<div class="program-header" style="background:#a11c1c">
+
+<div class="program-small">THE SACRED UNION</div>
+
+<h3>Marriage</h3>
+
+<p>The sacred wedding ritual</p>
+
+<div class="program-icon">💍</div>
+
+</div>
+
+<div class="program-body">
+
+<div class="program-row">
+<span class="program-time">01:30 PM</span>
+<span>Muhurat & Wedding Rituals</span>
+</div>
+
+<div class="program-row">
+    <span class="program-time">Location</span>
+    <span>Biju Pattnayak Kalyan Mandap, Hinjuli Katu</span>
+</div>
+
+<a href="https://maps.app.goo.gl/ULnHcTamfevjbHRh9" class="map-btn">📍 VIEW ON MAP (Direction)</a>
+
+<!-- <img src="images/lunch-map.jpg" class="program-map"> -->
+<iframe
+class="program-map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.23192231451696!2d84.7453377390877!3d19.48203432084503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d4d3093a18ac1%3A0xe4e3ac8bcfb283f1!2sBiju%20Pattnaik%20Kalyan%20Mandap.%20Patana%20sahi.%20Main%20road!5e0!3m2!1sen!2sin!4v1782294290200!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+height="220"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+<div class="program-footer">
+12 JUL 2026
+</div>
+
+</div>
+
+</div>
+
+<!-- WEDDING LUNCH -->
+<div class="program-card">
+
+<div class="program-header" style="background:#0f766e">
+
+<div class="program-small">WEDDING LUNCH</div>
+
+<h3>Lunch</h3>
+
+<p>Join us for the wedding feast</p>
+
+<div class="program-icon">🍽️</div>
+
+</div>
+
+<div class="program-body">
+
+<div class="program-row">
+<span class="program-time">02:00 PM</span>
+<span>Lunch Service Begins</span>
+</div>
+
+<div class="program-row">
+    <span class="program-time">Location</span>
+    <span>Biju Pattnayak Kalyan Mandap, Hinjuli Katu</span>
+</div>
+
+<a href="https://maps.app.goo.gl/ULnHcTamfevjbHRh9" class="map-btn">📍 VIEW ON MAP (Direction)</a>
+
+<!-- <img src="images/lunch-map.jpg" class="program-map"> -->
+<iframe
+class="program-map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.23192231451696!2d84.7453377390877!3d19.48203432084503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d4d3093a18ac1%3A0xe4e3ac8bcfb283f1!2sBiju%20Pattnaik%20Kalyan%20Mandap.%20Patana%20sahi.%20Main%20road!5e0!3m2!1sen!2sin!4v1782294290200!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+height="220"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+<div class="program-footer">
+12 JUL 2026
+</div>
+
+</div>
+
+</div>
+
+<!-- RECEPTION -->
+<div class="program-card">
+
+<div class="program-header" style="background:#6b21a8">
+
+<div class="program-small">EVENING CELEBRATION</div>
+
+<h3>Reception</h3>
+
+<p>An evening of joy & memories</p>
+
+<div class="program-icon">🎉</div>
+
+</div>
+
+<div class="program-body">
+
+<div class="program-row">
+<span class="program-time">07:00 PM</span>
+<span>Reception & Dinner</span>
+</div>
+
+<div class="program-row">
+    <span class="program-time">Location (Direction)</span>
+    <span>Sakalwaswra Temple, Industrial Easteat, Ankuli</span>
+</div>
+
+<a href="https://maps.app.goo.gl/YK74f2eZJ74JN4Cp8" class="map-btn">📍 VIEW ON MAP</a>
+
+<!-- <img src="images/reception-map.jpg" class="program-map"> -->
+
+<iframe
+class="program-map"
+src="https://maps.google.com/maps?q=19.302994,84.819432&z=17&output=embed"
+loading="lazy">
+</iframe>
+
+<div class="program-footer">
+12 JUL 2026
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="vows-section">
+
+<div class="save-date-small">
+SAPTAPADI • SEVEN STEPS
+</div>
+
+<div class="save-date-title">
+The Seven Vows
+</div>
+
+<p class="vows-intro">
+Around the sacred fire, seven steps are walked together —
+each a promise that binds two souls for seven lifetimes.
+</p>
+
+<div class="vows-list">
+
+<div class="vow-item">
+<div class="vow-number">1</div>
+<div>
+<h4>ANNAM</h4>
+<p>Together we will provide for and nourish our home.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">2</div>
+<div>
+<h4>BALAM</h4>
+<p>We will grow strong in body, mind and spirit.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">3</div>
+<div>
+<h4>AISHWARYA</h4>
+<p>We will share our wealth, joys and duties.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">4</div>
+<div>
+<h4>SUKHAM</h4>
+<p>We will fill our lives with love and trust.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">5</div>
+<div>
+<h4>PRAJA</h4>
+<p>We will care for our families and future generations.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">6</div>
+<div>
+<h4>RITU</h4>
+<p>We will walk together through every season of life.</p>
+</div>
+</div>
+
+<div class="vow-item">
+<div class="vow-number">7</div>
+<div>
+<h4>SAKHI</h4>
+<p>We will remain lifelong friends and soulmates.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- <footer>
+<div class="names">
+Khirod & Gayatri
+</div>
+
+<p style="margin-top:15px;">
+We look forward to celebrating with you.
+</p>
+</footer> -->
+
+<section class="footer-section">
+
+<div class="footer-photo">
+    <img src="images/footer-couple.jpg" alt="Couple">
+</div>
+
+<div class="save-date-small">
+WITH LOVE & BLESSINGS
+</div>
+
+<div class="footer-title">
+Gayatri & Khirod
+</div>
+
+<p class="footer-quote">
+“Two souls, one journey — we can't wait to begin it with you.”
+</p>
+
+<div class="save-date-small">
+FOR ANY ASSISTANCE, PLEASE CONTACT
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+    <h4>BRIDE'S FAMILY</h4>
+    <p>Akshaya Kumar Pattnaik</p>
+    <a href="tel:+919778029759">
+        +91 97780 29759
+    </a>
+</div>
+
+<div class="contact-card">
+    <h4>GROOM'S FAMILY</h4>
+    <p>Kiran Kumar Pattnaik</p>
+    <a href="tel:+919861254387">
+        +91 98612 54387
+    </a>
+</div>
+
+</div>
+
+<div class="footer-hashtag">
+#GayatriWedsKhirod
+</div>
+
+<p class="footer-bottom">
+Made with love • Tap the seal, share the joy
+</p>
+
+</section>
+
+<script>
+
+/* Envelope Animation */
+
+function openEnvelope(){
+
+document.getElementById("bgMusic").play();
+
+const hero = document.getElementById("hero");
+
+document.getElementById("envelope")
+    .classList.add("open");
+
+document.getElementById("inviteContent")
+    .classList.add("show");
+
+setTimeout(()=>{
+
+    hero.classList.add("fade-out");
+
+},1000);
+
+setTimeout(()=>{
+
+    hero.style.display="none";
+
+    document.querySelector(".invocation")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+},2000);
+
+}
+
+/* Countdown */
+
+const weddingDate = new Date("July 12, 2026 00:00:00").getTime();
+
+setInterval(()=>{
+
+const now = new Date().getTime();
+const gap = weddingDate - now;
+
+const days = Math.floor(gap/(1000*60*60*24));
+const hours = Math.floor((gap%(1000*60*60*24))/(1000*60*60));
+const mins = Math.floor((gap%(1000*60*60))/(1000*60));
+const secs = Math.floor((gap%(1000*60))/1000);
+
+document.getElementById("days").innerText = days;
+document.getElementById("hours").innerText = hours;
+document.getElementById("mins").innerText = mins;
+document.getElementById("secs").innerText = secs;
+
+},1000);
+
+/* Scratch Cards */
+
+document.querySelectorAll(".scratch").forEach(canvas=>{
+
+const ctx = canvas.getContext("2d");
+
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
+
+const gradient = ctx.createLinearGradient(
+0,0,
+canvas.width,
+canvas.height
+);
+
+gradient.addColorStop(0,"#e3c36c");
+gradient.addColorStop(1,"#c9a243");
+
+ctx.fillStyle = gradient;
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+for(let i=0;i<120;i++){
+
+ctx.fillStyle="rgba(255,255,255,.25)";
+
+ctx.beginPath();
+
+ctx.arc(
+Math.random()*canvas.width,
+Math.random()*canvas.height,
+Math.random()*2,
+0,
+Math.PI*2
+);
+
+ctx.fill();
+}
+
+ctx.fillStyle = "#fff";
+ctx.font = "bold 15px Arial";
+ctx.textAlign = "center";
+ctx.fillText("SCRATCH", canvas.width/6, canvas.height/2);
+
+let scratching = false;
+
+function scratch(x,y){
+ctx.globalCompositeOperation = "destination-out";
+ctx.beginPath();
+ctx.arc(x,y,25,0,Math.PI*2);
+ctx.fill();
+}
+
+canvas.addEventListener("mousedown", ()=> scratching=true);
+canvas.addEventListener("mouseup", ()=> scratching=false);
+
+canvas.addEventListener("mousemove",(e)=>{
+if(!scratching) return;
+
+const rect = canvas.getBoundingClientRect();
+scratch(
+e.clientX-rect.left,
+e.clientY-rect.top
+);
+});
+
+canvas.addEventListener("touchstart", ()=> scratching=true);
+
+canvas.addEventListener("touchend", ()=> scratching=false);
+
+canvas.addEventListener("touchmove",(e)=>{
+
+if(!scratching) return;
+
+const rect = canvas.getBoundingClientRect();
+
+scratch(
+e.touches[0].clientX-rect.left,
+e.touches[0].clientY-rect.top
+);
+
+});
+
+});
+
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function updateSlider(){
+
+slides.forEach((slide,index)=>{
+
+slide.style.opacity = "0";
+slide.style.zIndex = "0";
+
+if(index === current){
+
+slide.style.transform =
+'translateX(-50%) scale(1)';
+slide.style.opacity="1";
+slide.style.zIndex="3";
+
+}
+else if(index === (current+1)%slides.length){
+
+slide.style.transform =
+'translateX(20%) scale(.8) rotate(8deg)';
+slide.style.opacity=".7";
+slide.style.zIndex="2";
+
+}
+else if(index === (current-1+slides.length)%slides.length){
+
+slide.style.transform =
+'translateX(-120%) scale(.8) rotate(-8deg)';
+slide.style.opacity=".7";
+slide.style.zIndex="2";
+
+}
+});
+
+}
+
+function nextSlide(){
+
+current=(current+1)%slides.length;
+updateSlider();
+
+}
+
+function prevSlide(){
+
+current=(current-1+slides.length)%slides.length;
+updateSlider();
+
+}
+
+updateSlider();
+
+let startX = 0;
+
+const slider = document.querySelector('.story-slider');
+
+slider.addEventListener('touchstart',(e)=>{
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend',(e)=>{
+
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if(diff > 50){
+        nextSlide();
+    }
+
+    if(diff < -50){
+        prevSlide();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
