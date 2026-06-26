@@ -22,8 +22,17 @@
     box-sizing:border-box;
 }
 
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
 html{
     scroll-behavior:smooth;
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }
 
 /* body{
@@ -721,10 +730,13 @@ linear-gradient(
     color:var(--text);
     overflow-x:hidden;
 } */
- body{
+body{
     font-family:'Poppins',sans-serif;
     color:var(--text);
-    width: 100%;
+    margin:0;
+    padding:0;
+    width:100%;
+    max-width:100%;
     overflow-x:hidden;
 
     background:
@@ -751,6 +763,8 @@ section{
 
 body{
     background:#fff8ec;
+    width:100vw;
+    overflow-x:hidden;
 }
 
 .names{
@@ -812,6 +826,37 @@ body{
 
 .contact-card{
     width:100%;
+}
+
+.hero{
+    width:100vw;
+    overflow:hidden;
+}
+
+section{
+    width:100%;
+    overflow:hidden;
+}
+
+.story-slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.program-card{
+    width:100%;
+    max-width:100%;
+}
+
+.program-map{
+    width:100%;
+    max-width:100%;
+}
+
+img,
+iframe{
+    max-width:100%;
+    height:auto;
 }
 
 }
@@ -1244,7 +1289,7 @@ The blessings begin — auspicious rituals, the sacred vows at noon, and a joyfu
 
 
 
-<a href="https://maps.app.goo.gl/ULnHcTamfevjbHRh9" class="map-btn">📍 VIEW ON MAP (Direction)</a>
+<a href="https://maps.app.goo.gl/ULnHcTamfevjbHRh9" class="map-btn">📍 VIEW ON MAP </a>
 
 <!-- <img src="images/lunch-map.jpg" class="program-map"> -->
 <iframe
